@@ -26,14 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+  We learned that Express is a type of framework and that it is a good idea to use middleware such as Helmet to shield Express identification listing in the header so that hackers and other people can not see that you are using it. Security is important. We can also use other types of middleware to add to Express like Morgan which is a type of logging middleware. Express is very versitile in that it is very simple/minimalistic and can be added to by other middleware.
+
 - [ ] Describe Middleware?
+
+  Middleware is code/software that interjects between functions to add more functionality. A good example is when we used middleware to interject when we were handling server request through redux before.
 
 - [ ] Describe a Resource?
 
+  A resource is the information that client is trying to get through server requests. This resource could be something like a list of superhero information.
+
 - [ ] What can the API return to help clients know if a request was successful?
+
+  The API could return a response status of 200 (OK) code to let the client know that the request was successful.
 
 - [ ] How can we partition our application into sub-applications?
 
+  We can use express Routers to divide apps into sub-apps.
+  
 ## Project Setup
 
 Follow these steps to set up and work on your project:
