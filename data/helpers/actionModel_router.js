@@ -44,14 +44,4 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
-  try {
-    const action = await Actions.insert(req.body);
-    res.status(201).json(action);
-  } 
-  catch (error) {
-    res.status(500).json({message: "Error adding data"});
-  }
-});
-
 module.exports = router;
